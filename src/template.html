@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Task Manager</h1>
+
+    <div id="auth">
+        <h2>Register</h2>
+
+        <input type="email" id="regEmail" placeholder="Email">
+        <input type="password" id="regPassword" placeholder="Password">
+
+        <button id="registerButton">Sign Up</button>
+
+        <h2>Login</h2>
+
+        <input type="email" id="loginEmail" placeholder="Email">
+        <input type="password" id="loginPassword" placeholder="Password">
+
+        <button id="loginButton">Log In</button>
+    </div>
+
+    <div id="app">
+
+        <h2>Dashboard</h2>
+        <div id="stats">
+            <p>Total Tasks:<span id="total"></span></p>
+            <p>Completed:<span id="completed"></span></p>
+            <p>Pending:<span id="pending"></span></p>
+            <p>Overdue:<span id="overdue"></span></p>
+        </div>
+
+        <h2>Add Task</h2>
+        <input type="text" id="taskTitle" placeholder="Task Title">
+        <select id="taskPriority">
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+        </select>
+        <input type="date" id = "taskDate">
+
+        <button id="addTaskButton">Add Task</button>
+
+        <h2>Tasks</h2>
+        <select id="filter">
+            <option value="all">All</option>
+            <option value="pending">Pending</option>
+            <option value="complete">Complete</option>
+            <option value="overdue">Overdue</option>
+        </select>
+
+        <div id="taskList"></div>
+    </div>
+</body>
+</html>
